@@ -63,29 +63,34 @@ Y= A⊕B
 
 
 **PROGRAM**
-```
-module ex1(a,b,y1,y2,y3,y4,y5,y6);
-input a,b;
-output y1,y2,y3,y4,y5,y6;
-and g1(y1,a,b);
-or g2(y2,a,b);
-nand g3(y3,a,b);
-nor g4(y4,a,b);
-xor g5(y5,a,b);
-not g6(y6,a);
-endmodule
+
 Program for logic gates and verify its truth table in quartus using Verilog programming
 
+```
+ module log_gate(a,b,c1,c2,c3,c4,c5,c6,c7);
+ input a,b;
+ output c1,c2,c3,c4,c5,c6,c7;
+ assign c1=~a;
+ assign c2=a&b;
+ assign c3=a|b;
+ assign c4=~(a&b);
+ assign c5=~(a|b);
+ assign c6=a^b;
+ assign c7=~(a^b);
+endmodule
+```
 
- Developed by: Balaji B RegisterNumber: 212225040040
-``` 
+
 **Logic symbol & Truthtable**
-<img width="677" height="436" alt="Screenshot 2025-10-16 200321" src="https://github.com/user-attachments/assets/98a96fef-5f79-47d1-b2c8-e31c9926eb2d" />
+<img width="955" height="777" alt="Screenshot-2023-07-20-205854" src="https://github.com/user-attachments/assets/e27fa146-9935-45f7-8c8e-a160d6064d5b" />
+
+
 
 **RTL realization Output:** 
-<img width="692" height="531" alt="Screenshot 2025-10-16 200339" src="https://github.com/user-attachments/assets/7a035359-3877-4388-bc7b-472e96a90f22" />
+<img width="1799" height="887" alt="Screenshot 2025-10-08 093236" src="https://github.com/user-attachments/assets/a2e200aa-05cd-4a9c-9709-ba0d6b4184c6" />
+
 **RTL**
-<img width="744" height="350" alt="Screenshot 2025-10-16 200414" src="https://github.com/user-attachments/assets/f21e6b98-5c42-44f6-a152-1bef52061b03" />
+<img width="1917" height="1026" alt="Screenshot 2025-10-08 093137" src="https://github.com/user-attachments/assets/2c254618-3fb4-4bf2-8773-45fa30461dad" />
+
 **Result:**
-
-
+Thus the basic logic gates are studied and the truth tables are verified.
